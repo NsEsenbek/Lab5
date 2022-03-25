@@ -1,0 +1,43 @@
+1
+from re import *
+txt = ""
+x = findall("ab*", txt)
+print(x)
+
+2
+from re import *
+txt = ""
+x = findall("ab{2,3}", txt)
+print(x)
+
+3
+from re import *
+txt = ""
+x = findall("[a-z]+_[a-z]+", txt)
+print(x)
+
+4
+from re import *
+txt = ""
+x = findall("[A-Z][a-z]+", txt)
+print(x)
+
+5
+from re import *
+txt = ""
+x = findall("a\S+b", txt)
+print(x)
+
+6
+from re import *
+txt = ""
+x = sub("[ ,.]", ":", txt)
+print(x)
+
+7
+from re import *
+txt = ""
+x = sub("snake", "camel", txt)
+print(x)
+
+8
