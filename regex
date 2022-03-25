@@ -41,3 +41,14 @@ x = sub("snake", "camel", txt)
 print(x)
 
 8
+from re import *
+txt = ""
+l = []
+l.extend(txt)
+print(l)
+for i in range(len(l)):
+    if ord('a') <= ord(l[i]) <= ord('z'):
+        l[i] = l[i].upper()
+        print(l[i], end="")
+    else:
+        print(l[i], end="")
